@@ -186,7 +186,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock! Try again tomorrow.");
+				infoScreen.setText("Sorry, we're out of stock! Try again tomorrow.");
 			}
 		}
 	}
@@ -204,7 +204,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -222,7 +222,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -240,7 +240,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -258,7 +258,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
