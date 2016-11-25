@@ -85,8 +85,8 @@ public class VendingMachine1 extends JFrame {
 		SpecialPepsiButton = new JButton("Special Pepsi");
 		spriteButton = new JButton("Sprite");
 		buyButton = new JButton("Buy");
-		refillButton = new JButton("ReFill");
-		collectMoney = new JButton("SHOW ME THE MONEY");
+		refillButton = new JButton("Refill vending machine");
+		collectMoney = new JButton("Money owed");
                 getContentPane().setBackground(Color.RED);
 		
 		ActionListener cokeListener = new cokeHandler();
@@ -167,7 +167,7 @@ public class VendingMachine1 extends JFrame {
 		this.add(screenPanel, BorderLayout.SOUTH);
                 getContentPane().setBackground(Color.RED);
 		
-		setTitle("Dylans One and only Vending Machine");
+		setTitle("The one and only Vending Machine");
 		setSize(400, 800);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
@@ -186,7 +186,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock! Try again tomorrow.");
 			}
 		}
 	}
@@ -204,7 +204,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -222,7 +222,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -240,7 +240,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -258,7 +258,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock!");
+				infoScreen.setText("Sorry, we're out of stock!");
 			}
 		}
 	}
@@ -277,11 +277,11 @@ public class VendingMachine1 extends JFrame {
 			int backC = (int) back;
 			if (backC < 0)
 			{
-				infoScreen.setText("Sorry, not enough money! Try another amount of money.");
+				infoScreen.setText("Sorry, not enough money! Try entering another amount of money.");
 			}
 			else if (backC > 1500)
 			{
-				infoScreen.setText("Sorry, can't give you that much change! Try another amount of money.");
+				infoScreen.setText("Sorry, that's too much! Try entering another amount of money.");
 			}
 			else
 			{
@@ -294,8 +294,8 @@ public class VendingMachine1 extends JFrame {
 				cent = backC / 1;
 				
 				
-				infoScreen.setText("You have " +quarter + " quarter " + dime + " dime " + nickel + " nickel " + cent + " "
-						+ "cent back in your change Area.");
+				infoScreen.setText("You have received " +quarter + " quarter(s) " + dime + " dime(s) " + nickel + " nickel(s) and " + cent
+						+ "cent(s) back as change.");
 				
 			}
 		
@@ -306,7 +306,7 @@ public class VendingMachine1 extends JFrame {
 	{
 		public void actionPerformed(ActionEvent e)
 		{
-			infoScreen.setText("You got the total of "+ totalMachineMoney);
+			infoScreen.setText("Your total is: "+ totalMachineMoney + ".");
 			totalMachineMoney = 0;
                         getContentPane().setBackground(Color.RED);
 			
