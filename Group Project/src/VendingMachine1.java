@@ -295,7 +295,7 @@ public class VendingMachine1 extends JFrame {
 				
 				
 				infoScreen.setText("You have received " +quarter + " quarter(s) " + dime + " dime(s) " + nickel + " nickel(s) and " + cent
-						+ "cent(s) back as change!");
+						+ "cent(s) back as change.");
 				
 			}
 		
