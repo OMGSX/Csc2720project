@@ -294,7 +294,7 @@ public class VendingMachine1 extends JFrame {
 				cent = backC / 1;
 				
 				
-				infoScreen.setText("You have " +quarter + " quarter(s) " + dime + " dime(s) " + nickel + " nickel(s) and " + cent
+				infoScreen.setText("You have received " +quarter + " quarter(s) " + dime + " dime(s) " + nickel + " nickel(s) and " + cent
 						+ "cent(s) back as change.");
 				
 			}
