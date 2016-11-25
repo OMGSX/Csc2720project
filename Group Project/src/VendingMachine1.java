@@ -186,7 +186,7 @@ public class VendingMachine1 extends JFrame {
 			}
 			else
 			{
-				infoScreen.setText("Sorry, we are out of stock! Try again later.");
+				infoScreen.setText("Sorry, we are out of stock! Try again tomorrow.");
 			}
 		}
 	}
