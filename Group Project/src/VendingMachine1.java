@@ -277,11 +277,11 @@ public class VendingMachine1 extends JFrame {
 			int backC = (int) back;
 			if (backC < 0)
 			{
-				infoScreen.setText("Sorry, not enough money! Try entering another amount of money.");
+				infoScreen.setText("Sorry, not enough money! Try entering another amount of money");
 			}
 			else if (backC > 1500)
 			{
-				infoScreen.setText("Sorry, that's too much! Try entering another amount of money.");
+				infoScreen.setText("Sorry, that's too much! Try entering another amount of money");
 			}
 			else
 			{
