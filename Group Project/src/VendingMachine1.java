@@ -45,13 +45,7 @@ public class VendingMachine1 extends JFrame {
 	private JLabel pepsiInfo;
 	private JLabel SpecialPepsiInfo;
 	private JLabel spriteInfo;
-	private JLabel nullField1;
-	private JLabel nullField2;
-	private JLabel nullField3;
 	private JLabel nullField4;
-	private JLabel nullField5;
-	private JLabel nullField6;
-	private JLabel nullField7;
 	private JLabel infoScreen;
 	private JLabel enterQuantity;
 	private JLabel enterMoney;
@@ -79,16 +73,27 @@ public class VendingMachine1 extends JFrame {
 		screenPanel = new JPanel();
 		
 		cokeButton = new JButton("Coke");
+		cokeButton.setBackground(Color.RED);
 		cokeButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Coca-Cola-Can-icon (3).png"));
 		
 		dietCokeButton = new JButton("Diet Coke");
+		dietCokeButton.setBackground(Color.RED);
+		dietCokeButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Diet-Coke-Can-icon.png"));
 		pepsiButton = new JButton("Pespi");
+		pepsiButton.setBackground(Color.RED);
 		pepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Pepsi-Can-icon (1).png"));
 		SpecialPepsiButton = new JButton("Special Pepsi");
+		SpecialPepsiButton.setBackground(Color.RED);
+		SpecialPepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Special-Pepsi-Can-icon.png"));
 		spriteButton = new JButton("Sprite");
+		spriteButton.setBackground(Color.RED);
+		spriteButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Sprite-Can-icon.png"));
 		buyButton = new JButton("Buy");
+		buyButton.setBackground(Color.LIGHT_GRAY);
 		refillButton = new JButton("Refill vending machine");
+		refillButton.setBackground(Color.LIGHT_GRAY);
 		collectMoney = new JButton("Money owed");
+		collectMoney.setBackground(Color.LIGHT_GRAY);
 		
 		ActionListener cokeListener = new cokeHandler();
 		cokeButton.addActionListener(cokeListener);
@@ -119,19 +124,14 @@ public class VendingMachine1 extends JFrame {
 		pepsiInfo = new JLabel("Quantity: " + pepsiQuantity);
 		SpecialPepsiInfo = new JLabel("Quantity: " + SpecialPepsiQuantity);
 		spriteInfo = new JLabel("Quantity: " + spriteQuantity);
-		nullField1 = new JLabel("");
-		nullField2 = new JLabel("");
-		nullField3 = new JLabel("");
 		nullField4 = new JLabel("Operator Buttons");
-		nullField5 = new JLabel("");
-		nullField6 = new JLabel("");
-		nullField7 = new JLabel("");
 		
 		infoScreen = new JLabel("");
 		enterQuantity = new JLabel ("Enter Quantity: ");
 		enterMoney = new JLabel ("Please Enter Money: ");
 		wantedQuantity = new JTextField("");
 		paidMoney = new JTextField("");
+		paidMoney.setBackground(Color.WHITE);
 		buyingOptions.setLayout(new GridLayout(40,6));
 		buyingOptions.add(cokeButton);
 		buyingOptions.add(cokeInfo);
@@ -146,15 +146,9 @@ public class VendingMachine1 extends JFrame {
 		buyingOptions.add(enterMoney);
 		buyingOptions.add(paidMoney);	
 		buyingOptions.add(buyButton);
-		buyingOptions.add(nullField2);
-		buyingOptions.add(nullField3);
-		buyingOptions.add(nullField1);
 		buyingOptions.add(nullField4);
 		buyingOptions.add(collectMoney);	
 		buyingOptions.add(refillButton);
-		buyingOptions.add(nullField5);
-		buyingOptions.add(nullField6);
-		buyingOptions.add(nullField7);
 		
 		
 		screenPanel.add(infoScreen);
@@ -163,7 +157,7 @@ public class VendingMachine1 extends JFrame {
 		getContentPane().add(screenPanel, BorderLayout.SOUTH);
 		
 		setTitle("The one and only Vending Machine");
-		setSize(400, 800);
+		setSize(400, 1000);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setVisible(true);
 		
