@@ -7,7 +7,7 @@
 
 /**
  *
- * @author Dylan Monroe
+ * @author Dylan, Kristian, Drew, Megan, Omar, Timothy
  */
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -75,9 +75,7 @@ public class VendingMachine1 extends JFrame {
 		totalMachineMoney = 0;
 		
 		buyingOptions = new JPanel();
-                getContentPane().setBackground(Color.RED);
 		screenPanel = new JPanel();
-                getContentPane().setBackground(Color.RED);
 		
 		cokeButton = new JButton("Coke");
 		dietCokeButton = new JButton("Diet Coke");
@@ -87,7 +85,6 @@ public class VendingMachine1 extends JFrame {
 		buyButton = new JButton("Buy");
 		refillButton = new JButton("Refill vending machine");
 		collectMoney = new JButton("Money owed");
-                getContentPane().setBackground(Color.RED);
 		
 		ActionListener cokeListener = new cokeHandler();
 		cokeButton.addActionListener(cokeListener);
@@ -100,7 +97,6 @@ public class VendingMachine1 extends JFrame {
 		
 		ActionListener SpecialPepsiListener = new SpecialPepsiHandler();
 		SpecialPepsiButton.addActionListener(SpecialPepsiListener);
-                getContentPane().setBackground(Color.yellow);
 		
 		ActionListener spriteListener = new spriteHandler();
 		spriteButton.addActionListener(spriteListener);
@@ -130,10 +126,8 @@ public class VendingMachine1 extends JFrame {
 		infoScreen = new JLabel("");
 		enterQuantity = new JLabel ("Enter Quantity: ");
 		enterMoney = new JLabel ("Please Enter Money: ");
-	        getContentPane().setBackground(Color.RED);
 		wantedQuantity = new JTextField("");
 		paidMoney = new JTextField("");
-		getContentPane().setBackground(Color.RED);
 		buyingOptions.setLayout(new GridLayout(40,6));
 		buyingOptions.add(cokeButton);
 		buyingOptions.add(cokeInfo);
@@ -157,15 +151,12 @@ public class VendingMachine1 extends JFrame {
 		buyingOptions.add(nullField5);
 		buyingOptions.add(nullField6);
 		buyingOptions.add(nullField7);
-                getContentPane().setBackground(Color.RED);
 		
 		
 		screenPanel.add(infoScreen);
-                getContentPane().setBackground(Color.RED);
 		
 		this.add(buyingOptions, BorderLayout.NORTH);
 		this.add(screenPanel, BorderLayout.SOUTH);
-                getContentPane().setBackground(Color.RED);
 		
 		setTitle("The one and only Vending Machine");
 		setSize(400, 800);
@@ -308,8 +299,6 @@ public class VendingMachine1 extends JFrame {
 		{
 			infoScreen.setText("Your total is: "+ totalMachineMoney + ".");
 			totalMachineMoney = 0;
-                        getContentPane().setBackground(Color.RED);
-			
 		}
 	}
 	
