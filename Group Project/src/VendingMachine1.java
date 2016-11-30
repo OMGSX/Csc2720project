@@ -54,6 +54,7 @@ public class VendingMachine1 extends JFrame {
 	private JPanel buyingOptions;
 	private JPanel finishPayment;
 	private JPanel screenPanel;
+    private final JLabel cost;
 	
 	
 	
@@ -125,6 +126,7 @@ public class VendingMachine1 extends JFrame {
 		SpecialPepsiInfo = new JLabel("Quantity: " + SpecialPepsiQuantity);
 		spriteInfo = new JLabel("Quantity: " + spriteQuantity);
 		nullField4 = new JLabel("Operator Buttons");
+                cost = new JLabel ("The cost of all Drinks is 50 Cents");
 		
 		infoScreen = new JLabel("");
 		enterQuantity = new JLabel ("Enter Quantity: ");
@@ -132,6 +134,7 @@ public class VendingMachine1 extends JFrame {
 		wantedQuantity = new JTextField("");
 		paidMoney = new JTextField("");
 		paidMoney.setBackground(Color.WHITE);
+                buyingOptions.add(cost);
 		buyingOptions.setLayout(new GridLayout(40,6));
 		buyingOptions.add(cokeButton);
 		buyingOptions.add(cokeInfo);
@@ -149,6 +152,7 @@ public class VendingMachine1 extends JFrame {
 		buyingOptions.add(nullField4);
 		buyingOptions.add(collectMoney);	
 		buyingOptions.add(refillButton);
+                
 		
 		
 		screenPanel.add(infoScreen);
