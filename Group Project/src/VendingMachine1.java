@@ -21,7 +21,7 @@ public class VendingMachine1 extends JFrame {
 	private JButton cokeButton;
 	private JButton dietCokeButton;
 	private JButton pepsiButton;
-	private JButton SpecialPepsiButton;
+	private JButton GrapeSodaButton;
 	private JButton spriteButton;
 	private JButton buyButton;
 	private JButton refillButton;
@@ -30,7 +30,7 @@ public class VendingMachine1 extends JFrame {
 	private int cokeQuantity;
 	private int dietCokeQuantity;
 	private int pepsiQuantity;
-	private int SpecialPepsiQuantity;
+	private int GrapeSodaQuantity;
 	private int spriteQuantity;
     private int vending1;
 	
@@ -43,7 +43,7 @@ public class VendingMachine1 extends JFrame {
 	private JLabel cokeInfo;
 	private JLabel dietCokeInfo;
 	private JLabel pepsiInfo;
-	private JLabel SpecialPepsiInfo;
+	private JLabel GrapeSodaInfo;
 	private JLabel spriteInfo;
 	private JLabel nullField4;
 	private JLabel infoScreen;
@@ -63,7 +63,7 @@ public class VendingMachine1 extends JFrame {
 		cokeQuantity = 100;
 		dietCokeQuantity = 100;
 		pepsiQuantity = 100;
-		SpecialPepsiQuantity = 100;
+		GrapeSodaQuantity = 100;
 		spriteQuantity = 100;
 		
 		totalBill = 0;
@@ -83,9 +83,9 @@ public class VendingMachine1 extends JFrame {
 		pepsiButton = new JButton("Pespi");
 		pepsiButton.setBackground(Color.BLACK);
 		pepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Pepsi-Can-icon (1).png"));
-		SpecialPepsiButton = new JButton("Special Pepsi");
-		SpecialPepsiButton.setBackground(Color.BLACK);
-		SpecialPepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Special-Pepsi-Can-icon.png"));
+		GrapeSodaButton = new JButton("GrapeSoda");
+		GrapeSodaButton.setBackground(Color.BLACK);
+		GrapeSodaButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Special-Pepsi-Can-icon.png"));
 		spriteButton = new JButton("Sprite");
 		spriteButton.setBackground(Color.BLACK);
 		spriteButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Sprite-Can-icon.png"));
@@ -106,7 +106,7 @@ public class VendingMachine1 extends JFrame {
 		pepsiButton.addActionListener(pepsiListener);
 		
 		ActionListener SpecialPepsiListener = new SpecialPepsiHandler();
-		SpecialPepsiButton.addActionListener(SpecialPepsiListener);
+		GrapeSodaButton.addActionListener(SpecialPepsiListener);
 		
 		ActionListener spriteListener = new spriteHandler();
 		spriteButton.addActionListener(spriteListener);
@@ -123,7 +123,7 @@ public class VendingMachine1 extends JFrame {
 		cokeInfo = new JLabel("Quantity: " + cokeQuantity);
 		dietCokeInfo = new JLabel("Quantity: " + dietCokeQuantity);
 		pepsiInfo = new JLabel("Quantity: " + pepsiQuantity);
-		SpecialPepsiInfo = new JLabel("Quantity: " + SpecialPepsiQuantity);
+		GrapeSodaInfo = new JLabel("Quantity: " + GrapeSodaQuantity);
 		spriteInfo = new JLabel("Quantity: " + spriteQuantity);
 		nullField4 = new JLabel("Operator Buttons");
                 cost = new JLabel ("The cost of all Drinks is 50 Cents");
@@ -142,8 +142,8 @@ public class VendingMachine1 extends JFrame {
 		buyingOptions.add(dietCokeInfo);
 		buyingOptions.add(pepsiButton);
 		buyingOptions.add(pepsiInfo);
-		buyingOptions.add(SpecialPepsiButton);
-		buyingOptions.add(SpecialPepsiInfo);
+		buyingOptions.add(GrapeSodaButton);
+		buyingOptions.add(GrapeSodaInfo);
 		buyingOptions.add(spriteButton);
 		buyingOptions.add(spriteInfo);
 		buyingOptions.add(enterMoney);
@@ -224,12 +224,12 @@ public class VendingMachine1 extends JFrame {
 	{
 		public void actionPerformed(ActionEvent e)
 		{
-			if (SpecialPepsiQuantity > 0)
+			if (GrapeSodaQuantity > 0)
 			{
-				SpecialPepsiQuantity--;
+				GrapeSodaQuantity--;
 				totalBill += .50;
 				totalMachineMoney += 1;
-				SpecialPepsiInfo.setText("Quantity: " + SpecialPepsiQuantity);
+				GrapeSodaInfo.setText("Quantity: " + GrapeSodaQuantity);
 			}
 			else
 			{
@@ -312,18 +312,19 @@ public class VendingMachine1 extends JFrame {
 			cokeQuantity = 100;
 			dietCokeQuantity = 100;
 			pepsiQuantity = 100;
-			SpecialPepsiQuantity = 100;
+			GrapeSodaQuantity = 100;
 			spriteQuantity = 100;
 			
 			cokeInfo.setText("Quantity: " + cokeQuantity);
 			dietCokeInfo.setText("Quantity: " + dietCokeQuantity);
 			pepsiInfo.setText("Quantity: " + pepsiQuantity);
-			SpecialPepsiInfo.setText("Quantity: " + SpecialPepsiQuantity);
+			GrapeSodaInfo.setText("Quantity: " + GrapeSodaQuantity);
 			spriteInfo.setText("Quantity: " + spriteQuantity);
 			
 			infoScreen.setText("You have successfully refilled the machine.");
 		}
 	}
+        
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
