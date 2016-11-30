@@ -75,11 +75,15 @@ public class VendingMachine1 extends JFrame {
 		totalMachineMoney = 0;
 		
 		buyingOptions = new JPanel();
+		buyingOptions.setBackground(Color.RED);
 		screenPanel = new JPanel();
 		
 		cokeButton = new JButton("Coke");
+		cokeButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Coca-Cola-Can-icon (3).png"));
+		
 		dietCokeButton = new JButton("Diet Coke");
 		pepsiButton = new JButton("Pespi");
+		pepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Pepsi-Can-icon (1).png"));
 		SpecialPepsiButton = new JButton("Special Pepsi");
 		spriteButton = new JButton("Sprite");
 		buyButton = new JButton("Buy");
@@ -155,8 +159,8 @@ public class VendingMachine1 extends JFrame {
 		
 		screenPanel.add(infoScreen);
 		
-		this.add(buyingOptions, BorderLayout.NORTH);
-		this.add(screenPanel, BorderLayout.SOUTH);
+		getContentPane().add(buyingOptions, BorderLayout.NORTH);
+		getContentPane().add(screenPanel, BorderLayout.SOUTH);
 		
 		setTitle("The one and only Vending Machine");
 		setSize(400, 800);
