@@ -74,27 +74,27 @@ public class VendingMachine1 extends JFrame {
 		screenPanel = new JPanel();
 		
 		cokeButton = new JButton("Coke");
-		cokeButton.setBackground(Color.RED);
+		cokeButton.setBackground(Color.BLACK);
 		cokeButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Coca-Cola-Can-icon (3).png"));
 		
 		dietCokeButton = new JButton("Diet Coke");
-		dietCokeButton.setBackground(Color.RED);
+		dietCokeButton.setBackground(Color.BLACK);
 		dietCokeButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Diet-Coke-Can-icon.png"));
 		pepsiButton = new JButton("Pespi");
-		pepsiButton.setBackground(Color.RED);
+		pepsiButton.setBackground(Color.BLACK);
 		pepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Pepsi-Can-icon (1).png"));
 		SpecialPepsiButton = new JButton("Special Pepsi");
-		SpecialPepsiButton.setBackground(Color.RED);
+		SpecialPepsiButton.setBackground(Color.BLACK);
 		SpecialPepsiButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Special-Pepsi-Can-icon.png"));
 		spriteButton = new JButton("Sprite");
-		spriteButton.setBackground(Color.RED);
+		spriteButton.setBackground(Color.BLACK);
 		spriteButton.setIcon(new ImageIcon("C:\\Users\\krist\\Desktop\\Group Project\\Csc2720project\\Group Project\\src\\Sprite-Can-icon.png"));
 		buyButton = new JButton("Buy");
-		buyButton.setBackground(Color.LIGHT_GRAY);
+		buyButton.setBackground(Color.BLACK);
 		refillButton = new JButton("Refill vending machine");
-		refillButton.setBackground(Color.LIGHT_GRAY);
+		refillButton.setBackground(Color.BLACK);
 		collectMoney = new JButton("Money owed");
-		collectMoney.setBackground(Color.LIGHT_GRAY);
+		collectMoney.setBackground(Color.WHITE);
 		
 		ActionListener cokeListener = new cokeHandler();
 		cokeButton.addActionListener(cokeListener);
