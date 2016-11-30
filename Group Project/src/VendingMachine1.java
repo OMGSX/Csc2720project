@@ -32,7 +32,7 @@ public class VendingMachine1 extends JFrame {
 	private int pepsiQuantity;
 	private int SpecialPepsiQuantity;
 	private int spriteQuantity;
-        private int vending1;
+    private int vending1;
 	
 	private double totalBill;
 	private double totalMachineMoney;	
